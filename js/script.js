@@ -60,27 +60,27 @@ document.addEventListener("DOMContentLoaded", function () {
   changeLinkState(); // Run on page load to set initial state
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const readMoreBtns = document.querySelectorAll('.read-more-btn');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const readMoreBtns = document.querySelectorAll('.read-more-btn');
 
-  readMoreBtns.forEach(btn => {
-    const cardText = btn.previousElementSibling;
-    const words = cardText.innerText.split(' ');
+//   readMoreBtns.forEach(btn => {
+//     const cardText = btn.previousElementSibling;
+//     const words = cardText.innerText.split(' ');
 
-    if (words.length > 10) {
-      const truncatedText = words.slice(0, 10).join(' ') + '...';
-      cardText.innerText = truncatedText;
-      btn.style.display = 'inline-block';
+//     if (words.length > 10) {
+//       const truncatedText = words.slice(0, 10).join(' ') + '...';
+//       cardText.innerText = truncatedText;
+//       btn.style.display = 'inline-block';
 
-      btn.addEventListener('click', () => {
-        if (btn.innerText === 'Read More') {
-          cardText.innerText = words.join(' ');
-          btn.innerText = 'Read Less';
-        } else {
-          cardText.innerText = truncatedText;
-          btn.innerText = 'Read More';
-        }
-      });
-    }
-  });
-});
+//       btn.addEventListener('click', () => {
+//         if (btn.innerText === 'Read More') {
+//           cardText.innerText = words.join(' ');
+//           btn.innerText = 'Read Less';
+//         } else {
+//           cardText.innerText = truncatedText;
+//           btn.innerText = 'Read More';
+//         }
+//       });
+//     }
+//   });
+// });
