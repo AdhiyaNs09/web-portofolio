@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhiya Nur Septio | Portfolio</title>
+
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="loading">
+        <div class="spinner-border" style="width: 3rem; height: 3rem" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Adhiya Nur Septio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- hero -->
+    <section class="hero py-5" id="home">
+        <div class="container">
+            <p class="lead" style="margin-bottom: -5px">Hi, I'm</p>
+            <h1 class="display-4 fw-bold">Adhiya Nur Septio</h1>
+            <p class="lead"><span id="typed"></span></p>
+        </div>
+    </section>
+    <!-- akhir hero -->
+
+    <!-- about -->
+    <section id="about" class="py-5 mt-3">
+        <div class="container">
+            <div class="d-lg-flex align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">About Me</h2>
+                    <hr />
+                    <p class="lead">
+                        I am a Web Developer with 1 year of experience. I am passionate
+                        about web development and I am always looking for new and
+                        innovative ways to improve my skills. My goal is to create
+                        user-friendly and efficient web solutions that meet clients' needs
+                        and exceed expectations.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/about.png" alt="about" class="d-block mx-auto img-fluid" width="700" height="500"
+                        loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir about -->
+
+    <!-- projects -->
+    <section id="projects" class="py-5 justify-content-lg-center align-items-lg-center">
+        <div class="container mt-5">
+            <h2 class="fw-bold">Projects</h2>
+            <hr />
+            <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/image.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sikeumas</h5>
+                            <p class="card-text">
+                                Brief description of project 1. Highlight key features and technologies used. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                                Sed cursus ante dapibus diam.
+                            </p>
+                            <button class="btn btn-primary read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/image.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Arsip</h5>
+                            <p class="card-text">
+                                Brief description of project 2. Highlight key features and technologies used.
+                            </p>
+                            <button class="btn btn-primary read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/image.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Company Profile</h5>
+                            <p class="card-text">
+                                Brief description of project 3. Highlight key features and technologies Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Quidem mollitia, nesciunt libero deserunt
+                                suscipit at accusamus maxime fugiat voluptatibus debitis.
+                            </p>
+                            <button class="btn btn-primary read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir projects -->
+
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- library jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- library typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

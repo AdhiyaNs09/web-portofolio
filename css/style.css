@@ -1,0 +1,192 @@
+html {
+    scrollbar-width: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+    background-color: #10002b;
+}
+
+/* Fullscreen overlay for loading */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Customize spinner color */
+.spinner-border {
+    color: purple;
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .nav-item .nav-link,
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar .nav-item .nav-link.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) and (min-width: 360px) {
+    .navbar {
+        background: radial-gradient(circle at top left,
+                rgba(16, 0, 43, 0.8) 5%,
+                rgba(90, 24, 154, 1) 75%);
+    }
+}
+
+/* Jumbotron */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    background: radial-gradient(circle at top left,
+            rgba(16, 0, 43, 0.8) 5%,
+            rgba(90, 24, 154, 1) 75%,
+            rgba(199, 125, 255, 1) 100%);
+    position: relative;
+    font-family: "Roboto Mono", monospace;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,
+            rgba(16, 0, 43, 1) 5%,
+            rgba(255, 255, 255, 0) 25%);
+}
+
+/* About */
+#about {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,
+            rgba(36, 0, 70, 1) 5%,
+            rgba(255, 255, 255, 0) 25%);
+}
+
+/* Projects */
+#projects {
+    min-height: 100vh;
+    display: flex;
+    background-color: #240046;
+    background-image: radial-gradient(at 50% 70%, rgba(157, 78, 221, 0.7)0, transparent 65%);
+    /* radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%); */
+}
+
+#projects .card {
+    backdrop-filter: blur(14px) saturate(200%);
+    background-color: rgba(250, 250, 255, 0.09);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#projects .card img {
+    border-radius: 12px;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#projects .card:hover {
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+#projects .card::before,
+#projects .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#projects .card::before {
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.3), rgba(0, 204, 255, 0.3));
+    opacity: 0;
+}
+
+#projects .card::after {
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent);
+    transform: scale(0);
+}
+
+#projects .card:hover::before {
+    opacity: 1;
+}
+
+#projects .card:hover::after {
+    transform: scale(1.5);
+}
+
+#projects .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+#projects .card-text {
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+#projects .card:hover .card-title {
+    color: #e0aaff;
+    
+}
+
+#projects .card:hover .card-text {
+    color: #e0aaff;
+    
+}
