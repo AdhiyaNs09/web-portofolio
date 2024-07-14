@@ -65,7 +65,7 @@ body {
             rgba(16, 0, 43, 0.8) 5%,
             rgba(90, 24, 154, 1) 75%,
             rgba(199, 125, 255, 1) 100%);
-    position: relative;
+    /* position: relative; */
     font-family: "Roboto Mono", monospace;
     justify-content: center;
     align-items: center;
@@ -82,6 +82,11 @@ body {
     background: linear-gradient(0deg,
             rgba(16, 0, 43, 1) 5%,
             rgba(255, 255, 255, 0) 25%);
+}
+
+.social-icon a {
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
 }
 
 /* About */
@@ -121,8 +126,10 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.125);
     transition: all 0.5s ease-in-out;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     transform-style: preserve-3d;
+    box-shadow: 0 20px 40px rgba(193, 0, 241, 0.3);
+
 }
 
 #projects .card img {
@@ -135,6 +142,7 @@ body {
 #projects .card:hover {
     transform: scale(1.05) rotateY(10deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 #projects .card::before,
@@ -168,25 +176,30 @@ body {
     transform: scale(1.5);
 }
 
-#projects .card-title {
+.card-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #fff;
     transition: all 0.5s ease-in-out;
 }
 
-#projects .card-text {
+
+#projects .card .card-text {
     font-size: 1rem;
     color: #fff;
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 #projects .card:hover .card-title {
     color: #e0aaff;
-    
+
 }
 
 #projects .card:hover .card-text {
     color: #e0aaff;
-    
 }
